@@ -1,4 +1,7 @@
-# PostgreSQL + pgvector Dev Container / Codespace
+# Aisle Development Environment
+forked from [pamelafox/pgvector-playground](https://github.com/pamelafox/pgvector-playground)
+
+# Dev Container Python + PostgreSQL + pgvector
 
 This is a PostgreSQL dev container for use with VS Code Remote Containers or GitHub Codespaces.
 The devcontainer.json uses a docker-compose.yaml to set up a local PostgreSQL server inside the container.
@@ -10,8 +13,6 @@ For use with an Azure PostgreSQL server,  copy `.env.azure` into `.env` and adju
 Then run one of the examples in the `examples` directory.
 
 # Aisle Installation
-
-
 
 ## Fetch and Open in the VSCode Container
 ```
