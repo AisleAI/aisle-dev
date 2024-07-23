@@ -20,6 +20,7 @@ code .
 
 ## Login to Github
 ```
+# From within a terminal in the VSCode container
 gh auth login
 ```
 
