@@ -21,6 +21,7 @@ services:
     image: pgvector/pgvector:pg16
     restart: unless-stopped
     volumes:
+      - ..:/workspace:cached   
       - postgres-data:/var/lib/postgresql/data
     environment:
       POSTGRES_DB: postgres

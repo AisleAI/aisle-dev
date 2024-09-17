@@ -3,8 +3,12 @@ FROM mcr.microsoft.com/devcontainers/${IMAGE}
 
 ENV PYTHONUNBUFFERED 1
 
+RUN python -m pip install --upgrade pip \
+     && python -m pip install grpcio \
+     && python -m pip install grpcio-tools
+
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get -y install --no-install-recommends postgresql-client \
+     && apt-get -y install --no-install-recommends postgresql-client \
      && apt-get clean -y && rm -rf /var/lib/apt/lists/*
 
 # Install Github CLI https://github.com/cli/cli#installation
